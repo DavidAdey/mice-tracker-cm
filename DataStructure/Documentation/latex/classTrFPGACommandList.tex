@@ -1,0 +1,50 @@
+\hypertarget{classTrFPGACommandList}{\section{Tr\-F\-P\-G\-A\-Command\-List Class Reference}
+\label{classTrFPGACommandList}\index{Tr\-F\-P\-G\-A\-Command\-List@{Tr\-F\-P\-G\-A\-Command\-List}}
+}
+
+
+{\ttfamily \#include $<$Tr\-F\-P\-G\-A\-Command\-List.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ int, \hyperlink{classTrFPGADecodePair}{Tr\-F\-P\-G\-A\-Decode\-Pair} $>$ \hyperlink{classTrFPGACommandList_a1c32a9667dbed57eb5a1d510b685534b}{get\-Commands} ()
+\item 
+\hyperlink{classTrFPGADecodePair}{Tr\-F\-P\-G\-A\-Decode\-Pair} \hyperlink{classTrFPGACommandList_a4a898d25a2ee46209ace9f55574d115b}{get\-Command} (int)
+\item 
+int \hyperlink{classTrFPGACommandList_ae7a6364ad3319642f421e10692e9feeb}{update\-Decode\-Pair} (std\-::string, \hyperlink{classTrFPGADecodePair}{Tr\-F\-P\-G\-A\-Decode\-Pair})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Object to contain a list of F\-P\-G\-A commands usually performed in a single burst 
+
+\subsection{Member Function Documentation}
+\hypertarget{classTrFPGACommandList_a4a898d25a2ee46209ace9f55574d115b}{\index{Tr\-F\-P\-G\-A\-Command\-List@{Tr\-F\-P\-G\-A\-Command\-List}!get\-Command@{get\-Command}}
+\index{get\-Command@{get\-Command}!TrFPGACommandList@{Tr\-F\-P\-G\-A\-Command\-List}}
+\subsubsection[{get\-Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tr\-F\-P\-G\-A\-Decode\-Pair} Tr\-F\-P\-G\-A\-Command\-List\-::get\-Command (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{classTrFPGACommandList_a4a898d25a2ee46209ace9f55574d115b}
+Get a command identified by its order in the burst \hypertarget{classTrFPGACommandList_a1c32a9667dbed57eb5a1d510b685534b}{\index{Tr\-F\-P\-G\-A\-Command\-List@{Tr\-F\-P\-G\-A\-Command\-List}!get\-Commands@{get\-Commands}}
+\index{get\-Commands@{get\-Commands}!TrFPGACommandList@{Tr\-F\-P\-G\-A\-Command\-List}}
+\subsubsection[{get\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$int, {\bf Tr\-F\-P\-G\-A\-Decode\-Pair}$>$ Tr\-F\-P\-G\-A\-Command\-List\-::get\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTrFPGACommandList_a1c32a9667dbed57eb5a1d510b685534b}
+Get the command list map \hypertarget{classTrFPGACommandList_ae7a6364ad3319642f421e10692e9feeb}{\index{Tr\-F\-P\-G\-A\-Command\-List@{Tr\-F\-P\-G\-A\-Command\-List}!update\-Decode\-Pair@{update\-Decode\-Pair}}
+\index{update\-Decode\-Pair@{update\-Decode\-Pair}!TrFPGACommandList@{Tr\-F\-P\-G\-A\-Command\-List}}
+\subsubsection[{update\-Decode\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}int Tr\-F\-P\-G\-A\-Command\-List\-::update\-Decode\-Pair (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{purpose, }
+\item[{{\bf Tr\-F\-P\-G\-A\-Decode\-Pair}}]{decode\-\_\-data}
+\end{DoxyParamCaption}
+)}}\label{classTrFPGACommandList_ae7a6364ad3319642f421e10692e9feeb}
+Find a particular decode identified by the string Replace it within the Decode pair. Returns O\-K. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Tr\-F\-P\-G\-A\-Command\-List.\-hh\item 
+Tr\-F\-P\-G\-A\-Command\-List.\-cc\end{DoxyCompactItemize}
