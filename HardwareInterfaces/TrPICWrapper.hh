@@ -12,9 +12,10 @@
 class TrPICWrapper : public TrBase {
 
 	friend class TrPICProgrammer;
+	friend class TrFPGAProgrammer;
 
 	private:
-		TrPICCommandList wrapAsPICCommands(TrFPGACommandList*);
+		TrPICCommandList* wrapAsPICCommands(TrFPGACommandList*);
 	public:
 
 };

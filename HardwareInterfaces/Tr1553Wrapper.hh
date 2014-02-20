@@ -7,10 +7,10 @@
 
 class Tr1553Wrapper : public TrBase {
 	
-	friend class Tr1553Programmer;
+	friend class TrPICProgrammer;
 	
 	private:
-		Tr1553CommandList wrapAs1553Commands(TrPICCommandList);
+		Tr1553CommandList* wrapAs1553Commands(TrPICCommandList*);
 	public:
 		
 		

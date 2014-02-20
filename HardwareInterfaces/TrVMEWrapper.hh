@@ -6,10 +6,10 @@
 
 class TrVMEWrapper : public TrBase {
 	
-	friend class TrVMEProgrammer;
+	friend class Tr1553Programmer;
 
 	private:
-		TrVMECommandList wrapAsVMECommands(Tr1553CommandList);
+		TrVMECommandList* wrapAsVMECommands(Tr1553CommandList*);
 
 };
 #endif
