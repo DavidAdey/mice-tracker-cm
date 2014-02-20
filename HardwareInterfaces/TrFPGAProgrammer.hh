@@ -4,6 +4,7 @@
 #include "TrInterfaceProgrammer.hh"
 #include "TrFPGACommandList.hh"
 #include "TrPICProgrammer.hh"
+#include "TrPICWrapper.hh"
 
 
 
@@ -11,9 +12,10 @@ class TrFPGAProgrammer : public TrInterfaceProgrammer {
 
 	private:
 		TrPICProgrammer picProgrammer;
+		TrPICWrapper picWrapper;
 
 	public:
-		int program(TrCommandList*);
+		int program(TrFPGACommandList*);
 
 };
 

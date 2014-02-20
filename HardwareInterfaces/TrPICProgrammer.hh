@@ -1,5 +1,5 @@
 #include "TrInterfaceProgrammer.hh"
-#include "TrPICWrapper.hh"
+#include "Tr1553Wrapper.hh"
 #include "Tr1553Programmer.hh"
 
 #ifndef TRPICPROGRAMMER_HH
@@ -11,10 +11,10 @@ class TrPICProgrammer : public TrInterfaceProgrammer {
 	friend class TrFPGAProgrammer;
 	
 	private:
-		TrPICWrapper wrapper;
+		Tr1553Wrapper wrapper;
 		Tr1553Programmer mil1553Programmer;
 		virtual int program(TrCommandList*);
-		virtual int program(TrFPGACommandList*);
+		virtual int program(TrPICCommandList*);
 	public:
 };
 

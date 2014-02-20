@@ -23,7 +23,7 @@ class TrVMEProgrammer : public TrInterfaceProgrammer {
 		static int dataWidth;
 		
 		TrVMEWrapper wrapper;
-		int program(Tr1553CommandList);
+		virtual int program(TrVMECommandList*);
 	public:
 };
 
