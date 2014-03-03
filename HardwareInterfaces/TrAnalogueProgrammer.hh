@@ -1,4 +1,5 @@
 #include "TrProgrammer.hh"
+#include "TrAnalogueInitialisationState.hh"
 
 class TrAnalogueProgrammer : public TrProgrammer {
 
